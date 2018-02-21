@@ -53,13 +53,13 @@ function drawP2() {
 // collision detection
 
 function checkCollisionP1() {
-    if (historyP2.indexOf(xP1 + " " + yP1) >= 0) {
+    if (historyP2.indexOf(xP1 + " " + yP1) >= 0 || historyP1.indexOf(xP1 + " " + yP1) >= 0) {
         return true;
     }
 }
 
 function checkCollisionP2() {
-    if (historyP1.indexOf(xP2 + " " + yP2) >= 0) {
+    if (historyP1.indexOf(xP2 + " " + yP2) >= 0 || historyP2.indexOf(xP2 + " " + yP2) >= 0) {
         return true;
     }
 }
